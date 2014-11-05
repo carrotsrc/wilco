@@ -1,7 +1,9 @@
 # Wilco
-## Loosely a C++ MVC framework for GTK+ in early stages
+### Basic MVC C++ framework for GTK+
 
-This is the beginnings of an MVC framework (loosely speaking) for GTK+ that is being built underneath an application I am working on. It's been very fun and interesting so far. This has no language bindings, it's using the straight API.
+This is the *beginning stages* of a basic MVC framework (loosely speaking) for GTK+ that is being built underneath an application I am working on. It's been very fun and interesting so far. This has no language bindings, it's using the straight API.
+
+This may be useful to someone so I've put it up here.
 
 #### Models
 
