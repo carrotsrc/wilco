@@ -1,3 +1,6 @@
+/* Copyright 2014, Charlie Fyvie-Gauld
+*  Distributed under the MIT License (http://opensource.org/licenses/MIT)
+*/
 #ifndef WIDGETBINDING_H
 #define WIDGETBINDING_H
 #include "glib_common.h"

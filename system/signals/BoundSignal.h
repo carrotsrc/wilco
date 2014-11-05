@@ -1,3 +1,6 @@
+/* Copyright 2014, Charlie Fyvie-Gauld
+*  Distributed under the MIT License (http://opensource.org/licenses/MIT)
+*/
 #ifndef BOUNDSIGNAL_H
 #define BOUNDSIGNAL_H
 /** @file */
