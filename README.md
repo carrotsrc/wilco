@@ -31,6 +31,16 @@ A Unit Controller is the individual state. It is designed to represent one view 
 
 Controllers act as the handlers for signals from widgets, they use their class methods as the callbacks to the GTK signals. Controllers also handle generating widgets and binding them to data for the view to deal with.
 
+#### Documentation
+
+Documented the classes so far for use with Doxygen. Included the template Doxyfile config. You will need to change the output directory from my one.
+
+To generate the files just run:
+
+```
+doxygen Doxyfile
+```
+
 
 #### License
 
