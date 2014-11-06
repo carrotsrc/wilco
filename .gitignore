@@ -1,2 +1,3 @@
 *.o
-domain/*
+.directory
+bin/*

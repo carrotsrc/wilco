@@ -12,7 +12,8 @@
  * will allow the representation of data or controls
  */
 class Model {
-
+protected:
+public:
 };
 
 #endif
