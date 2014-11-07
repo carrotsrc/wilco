@@ -19,6 +19,9 @@ class ControlModel : public Model {
 	vector<WidgetBinding*> bindings; ///< A list of widget data bindings
 
 	public:
+		TModel ControlModel(PACK)
+		: BModel(Model) { };
+
 		~ControlModel();
 		void addBinding(GtkWidget *, void *);
 		GtkWidget *getWidget(void *);

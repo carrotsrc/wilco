@@ -5,7 +5,7 @@ INTR_LINK=$(LINKER) -r
 
 DEPFLAG=-MMD -MP
 
-CFLAG=$(XFLAGS) -ggdb -I$(REL)/ -I$(REL)/system/include -I$(REL)/domain
+CFLAG=$(XFLAGS) -ggdb -std=c++11 -I$(REL)/ -I$(REL)/system/include -I$(REL)/domain
 BIN=bin
 ODIR=$(BIN)/obj
 OBJ_DIR=$(ODIR)

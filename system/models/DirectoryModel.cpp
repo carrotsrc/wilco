@@ -3,16 +3,6 @@
 */
 #include "DirectoryModel.h"
 
-/**
- * The constructor assigns the path to the model
- *
- * @param path The const char* of the path to point the model to
- */
-DirectoryModel::DirectoryModel(const char *path) {
-	this->path.assign(path);
-
-}
-
 DirectoryModel::~DirectoryModel() {
 }
 

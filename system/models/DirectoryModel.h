@@ -20,7 +20,16 @@ class DirectoryModel : public Model {
 		vector<string> ofType(GFileType type);
 
 	public:
-		DirectoryModel(const char *path);
+		/**
+		 * The constructor assigns the path to the model
+		 *
+		 * @param path The const char* of the path to point the model to
+		 * @param PACK Any parent constructor variables
+		 */
+		TModel DirectoryModel(const char *path, PACK)
+		: BModel(Model) {
+			this->path.assign(path);
+		}
 		~DirectoryModel();
 };
 #endif
