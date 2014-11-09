@@ -4,6 +4,7 @@
 #ifndef MODEL_H
 #define MODEL_H
 #include "common.h"
+#include "system/Buildable.h"
 
 /** @file */
 
@@ -22,7 +23,7 @@
  * Models are used for different representations in the system. Derived classes
  * will allow the representation of data or controls
  */
-class Model {
+class Model : public Buildable {
 protected:
 public:
 	/**

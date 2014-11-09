@@ -15,7 +15,8 @@
  */
 class DirectoryModel : public Model {
 	protected:
-		string path; ///< The string variable for holding the path for the model
+		const string path; ///< The string variable for holding the path for the model
+		GFile *dir;
 
 		vector<string> ofType(GFileType type);
 
@@ -26,10 +27,13 @@ class DirectoryModel : public Model {
 		 * @param path The const char* of the path to point the model to
 		 * @param PACK Any parent constructor variables
 		 */
-		TModel DirectoryModel(const char *path, PACK)
-		: BModel(Model) {
-			this->path.assign(path);
-		}
+		DirectoryModel(GFile *dir);
 		~DirectoryModel();
+};
+
+struct DirectoryModelInit : BInit {
+	DirectoryModelInit(const char *path)
+	: path(path) {}
+	const char *path;
 };
 #endif

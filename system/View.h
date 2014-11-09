@@ -5,6 +5,7 @@
 #define VIEW_H
 #include "glib_common.h"
 #include "system/models/ControlModel.h"
+#include "system/Buildable.h"
 
 /**
  * The base class for Views
@@ -14,7 +15,7 @@
  * of widgets on a layout. They are used to display the data in
  * the models for the user
  */
-class View {
+class View : public Buildable {
 	private:
 	
 	protected:

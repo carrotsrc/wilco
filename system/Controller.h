@@ -17,7 +17,7 @@
  * for those views and handling any signals from 
  * callbacks
  */
-class Controller : public SignalHandler {
+class Controller : public Buildable, public SignalHandler {
 	protected:
 		void initView(View *view);
 

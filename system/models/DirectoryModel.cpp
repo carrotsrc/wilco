@@ -2,6 +2,9 @@
 *  Distributed under the MIT License (http://opensource.org/licenses/MIT)
 */
 #include "DirectoryModel.h"
+DirectoryModel::DirectoryModel(GFile *dir) {
+	this->dir = dir;
+}
 
 DirectoryModel::~DirectoryModel() {
 }
@@ -16,7 +19,6 @@ DirectoryModel::~DirectoryModel() {
  * @return vector<string> of the files found from the enumeration
  */
 vector<string> DirectoryModel::ofType(GFileType type) {
-	GFile *dir = g_file_new_for_path( (const gchar*)this->path.c_str() );
 	GFileInfo *gfi = NULL;
 	GError *error = NULL;
 	GFileEnumerator *info = g_file_enumerate_children(dir, "standard::name,standard::type", G_FILE_QUERY_INFO_NONE, NULL, &error);
@@ -35,4 +37,3 @@ vector<string> DirectoryModel::ofType(GFileType type) {
 	g_object_unref(dir);
 	return list;
 }
-

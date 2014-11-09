@@ -11,6 +11,6 @@
 int main(int argc, char *argv[]) {
 	gtk_init(&argc, &argv);
 	Wilco *framework = new Wilco();
-	DirectoryModel *model = framework->getMegaFactory()->create<DirectoryModel>();
+
 	gtk_main();
 }

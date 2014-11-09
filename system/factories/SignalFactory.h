@@ -17,6 +17,8 @@
  *
  * It also handles the central SignalBank and registering Signal instances with
  * the bank, as well as destroying the bank when the object is freed
+ *
+ * This is a specific kind of factory so can't be built by the MegaFactory
  */
 class SignalFactory {
 	private:
