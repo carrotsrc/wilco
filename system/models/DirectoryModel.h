@@ -31,7 +31,7 @@ class DirectoryModel : public Model {
 		~DirectoryModel();
 };
 
-struct DirectoryModelInit : BInit {
+struct DirectoryModelInit : BuilderInit {
 	DirectoryModelInit(const char *path)
 	: path(path) {}
 	const char *path;

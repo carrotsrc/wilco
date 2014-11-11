@@ -37,10 +37,12 @@ public:
 	 * return a newly constructed U.
 	 *
 	 * @param <U> The type of object to construct
+	 * @param params The BuilderInit derived structure to pass for initialisation
 	 * @return A pointer to new U object
+	 * @TODO Error checking
 	 */
 	template <class U>
-	U *create(BInit params) {
+	U *create(BuilderInit params) {
 		type_index index = typeid(U);
 		return (U*)this->factories[index]->create(params);
 	}

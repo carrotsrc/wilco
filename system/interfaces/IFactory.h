@@ -4,7 +4,7 @@
 #include "common.h"
 class IFactory {
 public:
-	virtual Buildable *create(BInit params) { };
+	virtual Buildable *create(BuilderInit params) { };
 };
 
 #endif

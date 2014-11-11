@@ -5,6 +5,6 @@
 
 class DirectoryModelFactory : public IFactory {
 public:
-	Buildable *create(BInit params);
+	Buildable *create(BuilderInit params);
 };
 #endif

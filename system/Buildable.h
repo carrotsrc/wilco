@@ -9,6 +9,13 @@
  */
 class Buildable { };
 
-struct BInit { };
+/**
+ * The base structure to define Buildable initialisation parameters
+ *
+ * This is used to pass - what are essentially - constructor parameters
+ * to the factory so it can successfully instantiate any of the dependencies
+ * for the buildable object.
+ */
+struct BuilderInit { };
 
 #endif
